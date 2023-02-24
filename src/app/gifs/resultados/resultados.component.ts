@@ -9,6 +9,6 @@ export class ResultadosComponent {
   constructor(private gifService: GifsService){}
 
     get resultados(){
-      return this.gifService.resultado;
+      return this.gifService.resultados;
     }
 }
