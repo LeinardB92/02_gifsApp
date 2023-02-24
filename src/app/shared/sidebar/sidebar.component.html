@@ -6,11 +6,12 @@
     <hr class="text-white">
     
     <div class="list-group list-reset">
-      <a *ngFor="let x of hist" 
+      <button *ngFor="let x of hist"
+        (click)="buscar(x)"
         class="text-light"
-        href="#" class="list-group-item list-group-item-action">
+        class="list-group-item list-group-item-action">
           {{x | titlecase}}
-      </a>
+      </button>
     </div>
   </div>
  <!--End sidebar  -->
